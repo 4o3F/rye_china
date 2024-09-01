@@ -30,9 +30,9 @@ BINARY="rye-${ARCH}-${PLATFORM}"
 
 # Oddly enough GitHub has different URLs for latest vs specific version
 if [[ $VERSION == "latest" ]]; then
-  DOWNLOAD_URL=https://github.com/${REPO}/releases/latest/download/${BINARY}.gz
+  DOWNLOAD_URL=https://ghproxy.net/https://github.com/${REPO}/releases/latest/download/${BINARY}.gz
 else
-  DOWNLOAD_URL=https://github.com/${REPO}/releases/download/${VERSION}/${BINARY}.gz
+  DOWNLOAD_URL=https://ghproxy.net/https://github.com/${REPO}/releases/download/${VERSION}/${BINARY}.gz
 fi
 
 echo "This script will automatically download and install rye (${VERSION}) for you."
